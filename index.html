@@ -3,22 +3,13 @@
 		<meta charset="UTF-8" />
 		<link id="favicon" rel="icon" href="https://firer.at/files/favicon.ico" type="image/x-icon" />
 		<meta name="color-scheme" content="dark">
-		<meta property="og:title" content="A Github Test Space">
-		<meta property="og:description" content="FireR.at's Website/Space">
-		<meta property="og:image" content="https://cdn.sidequestvr.com/file/636694/0121-1024x1024-box-tile-optical.png">  
+		<meta property="og:title" content="Zephii">
+    		<meta property="og:description" content="Zephii">
+    		<meta property="og:image" content="https://softervolumes.com/wp-content/uploads/2021/07/kloke.jpg?v=1677357571513">
 		<script src="https://aframe.io/releases/1.4.0/aframe.min.js" sq-space="https://sidequestvr.com/space/2471"></script>
-		<title>FireR.at's Website/Space</title>
+		<title>Zsmoke/Space</title>
 		<script src="https://vidya.sdq.st/say-names.js" four-twenty="false" announce-events="true"></script>
-		<script src="https://firer.at/scripts/tests.js"></script>
-		<link rel="stylesheet" href="https://firer.at/pages/style.css" />
-		<!-- Analytics and Cookie Stuff Start -->
-		<script src="https://cookiechimp.com/widget/mV3trJ.js"></script>
-		<script type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-HSMS8JERQ2"
-		  data-category="analytics" data-service="Google Analytics" ></script>
-		<script type="text/plain" data-category="analytics" data-service="Google Analytics" >
-		  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date()); gtag('config', 'G-HSMS8JERQ2'); </script>
-		<!-- Analytics and Cookie Stuff END -->
+		<link rel="stylesheet" href="https://zephii.com/pages/style.css" />
 		
 		<script>
 
@@ -31,45 +22,41 @@
 	</script>
 <script nonce="c664b4e9-66fa-4497-bfb4-6e9f81329dfa">try{(function(w,d){!function(c,d,e,f){if(c.zaraz)console.error("zaraz is loaded twice");else{c[e]=c[e]||{};c[e].executed=[];c.zaraz={deferred:[],listeners:[]};c.zaraz._v="5714";c.zaraz.q=[];c.zaraz._f=function(g){return async function(){var h=Array.prototype.slice.call(arguments);c.zaraz.q.push({m:g,a:h})}};for(const i of["track","set","debug"])c.zaraz[i]=c.zaraz._f(i);c.zaraz.init=()=>{var j=d.getElementsByTagName(f)[0],k=d.createElement(f),l=d.getElementsByTagName("title")[0];l&&(c[e].t=d.getElementsByTagName("title")[0].text);c[e].x=Math.random();c[e].w=c.screen.width;c[e].h=c.screen.height;c[e].j=c.innerHeight;c[e].e=c.innerWidth;c[e].l=c.location.href;c[e].r=d.referrer;c[e].k=c.screen.colorDepth;c[e].n=d.characterSet;c[e].o=(new Date).getTimezoneOffset();if(c.dataLayer)for(const p of Object.entries(Object.entries(dataLayer).reduce(((q,r)=>({...q[1],...r[1]})),{})))zaraz.set(p[0],p[1],{scope:"page"});c[e].q=[];for(;c.zaraz.q.length;){const s=c.zaraz.q.shift();c[e].q.push(s)}k.defer=!0;for(const t of[localStorage,sessionStorage])Object.keys(t||{}).filter((v=>v.startsWith("_zaraz_"))).forEach((u=>{try{c[e]["z_"+u.slice(7)]=JSON.parse(t.getItem(u))}catch{c[e]["z_"+u.slice(7)]=t.getItem(u)}}));k.referrerPolicy="origin";k.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(c[e])));j.parentNode.insertBefore(k,j)};["complete","interactive"].includes(d.readyState)?zaraz.init():c.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
 	<body id="body" class="fixed" style="background-color:#111111;color: #FFFFFF;">
-	   <div style="display: none;"><a-scene id="ascene"
-            sq-friendpositionjoinallowed="enabled: false" sq-portalsenabled="enabled: true" sq-refreshrate="rate:90" sq-spawnpoint="position: 0 0 0;" sq-maxoccupancy="number: 20"
-             sq-assetbundle="
-				android: https://firer.at/android.banter;
-				desktop: https://firer.at/windows.banter;"    >
+	   <div style="display: none;">
+		   
+		   <a-scene sq-assetbundle="android: https://z.bant.ing/android.banter; 
+                             desktop: https://z.bant.ing/windows.banter" 
+             sq-refreshrate="rate:90" sq-spawnpoint="position: 0 0 -4.8 180;">
 
+	<!-- Mirror -->
+ <a-entity sq-mirror position="3 1 6" rotation="0 -90 0" scale="4 4 1"></a-entity>
+      
 	<!-- Screen for Movies/Screencast -->
-  <script src="https://firer.at/scripts/firescreencast.js"
-          website="https://firer.at/" mipmaps="1" pixelsperunit="1600" backdrop="0"
-          position="5 1.5 0" rotation="0 -90 0" scale="2 2 1" volumelevel="0.1"></script>
+		<script src="https://zephiivr.glitch.me/firescreencast.js"
+            website="https://sidequestvr.github.io/SideQuest.Banter.Spaces/screen-cast/?sid=1795432486801369" mipmaps="1" pixelsperunit="1600" backdrop="1"
+            position="-5 2.6 14" rotation="0 180 0" scale="9 9 1"></script>
     
 	<!-- Main Fire Browser, grabbable/moveable -->
-  <script src="https://firer.at/scripts/firescreen.js"
-          website="https://firer.at/" mipmaps="1" pixelsperunit="1600"
-          position="0 1.5 6" rotation="0 180 0" scale="2 2 1" volumelevel="0.2"></script>
-
-  <!--     Test Buttons stuff -->
-  <a-entity id="somebuttons" position="1.7 1.5 6" rotation="0 -180 0" scale="0.2 0.2 0.2" >
-    <!-- Test Button -->
-    <a-plane position="0 3 0" opacity="1.0" width="2" height="0.6"
-    disable-fscreen color="#333333" sq-collider sq-interactable >
-    <a-text value="disable F screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
-    <!-- Test Button -->
-    <a-plane position="0 2 0" opacity="1.0" width="2" height="0.6"
-    enable-fscreen	color="#333333" sq-collider sq-interactable >
-    <a-text value="enable F screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
-    <!-- Test Button -->
-    <a-plane position="0 1 0" opacity="1.0" width="2" height="0.6"
-    disable-screen color="#333333" sq-collider sq-interactable >
-    <a-text value="disable ss screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
-    <!-- Test Button -->
-    <a-plane position="0 0 0" opacity="1.0" width="2" height="0.6"
-    enable-screen	color="#333333" sq-collider sq-interactable >
-    <a-text value="enable ss screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
-  </a-entity>
-
-  <a-entity sq-mirror position="-5 1 0" rotation="0 90 0" scale="3 3 1"></a-entity>
+		<script src="https://zephiivr.glitch.me/firescreen.js"
+            website="https://www.youtube.com/watch?v=jfKfPfyJRdk" mipmaps="1" pixelsperunit="1600"
+            position="0 1.5 6" rotation="0 180 0" scale="2 2 1" volumelevel="0.05"></script>
     
-    </a-scene></div>
+	<!-- 3D Model Previews -->
+<a-entity id="3D-Preview" position="-32.1 0 -0.9" animation__right="dur:10000; from:0; to:360; easing:linear; loop:-1; property:object3D.rotation.y;">
+      <a-entity id="PreviewTop" gltf-model="https://files.readyplayer.me/asset/modelUrl/43e96a2f-0ad4-4ed2-87e5-65d93774326c/1636b970-8cc6-4b33-b28d-dba30930f0ff-1718348561543.glb"></a-entity>
+      <a-entity id="PreviewBottom" gltf-model="https://files.readyplayer.me/asset/modelUrl/645e3b71-7641-4e73-8c91-56e1fa90ae1f/8da8b607-f219-461f-a6a4-fc45f40847f3-1718656260194.glb"></a-entity>
+      <a-entity id="PreviewShoes" gltf-model="https://files.readyplayer.me/asset/modelUrl/e8721fbc-de1a-4f25-83f8-73369f950924/a95ff185-4de8-41e6-b4a9-aab41fcfced5-1718051769130.glb"></a-entity>
+     </a-entity>
+
+<!-- <script src="https://vidya.sdq.st/playlist.js"
+            position="2 2 2" rotation="0 0 0" scale="7 7 7"
+            volume="2" button-position="0 2 0" button-rotation="0 0 0" 
+              button-scale="1 1 1" instance="zephii" one-for-each-instance="false" announce="true" spatial="false"
+            playlist="PLzgofGqYK8u4CZHZTWHr-CAhI0YMGIFo3" resolution="720"></script> -->
+      
+    </a-scene>
+	   
+	   </div>
 <center><br/>
 	<a href="https://firer.at/pages/games.html" class="buttonG">Go Home</a>
 	<p>Or Enter a URL here:<br/>
