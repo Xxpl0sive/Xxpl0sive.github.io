@@ -1,0 +1,84 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link id="favicon" rel="icon" href="https://firer.at/files/favicon.ico" type="image/x-icon" />
+		<meta name="color-scheme" content="dark">
+		<meta property="og:title" content="A Github Test Space">
+		<meta property="og:description" content="FireR.at's Website/Space">
+		<meta property="og:image" content="https://cdn.sidequestvr.com/file/636694/0121-1024x1024-box-tile-optical.png">  
+		<script src="https://aframe.io/releases/1.4.0/aframe.min.js" sq-space="https://sidequestvr.com/space/2471"></script>
+		<title>FireR.at's Website/Space</title>
+		<script src="https://vidya.sdq.st/say-names.js" four-twenty="false" announce-events="true"></script>
+		<script src="https://firer.at/scripts/tests.js"></script>
+		<link rel="stylesheet" href="https://firer.at/pages/style.css" />
+		<!-- Analytics and Cookie Stuff Start -->
+		<script src="https://cookiechimp.com/widget/mV3trJ.js"></script>
+		<script type="text/plain" data-src="https://www.googletagmanager.com/gtag/js?id=G-HSMS8JERQ2"
+		  data-category="analytics" data-service="Google Analytics" ></script>
+		<script type="text/plain" data-category="analytics" data-service="Google Analytics" >
+		  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date()); gtag('config', 'G-HSMS8JERQ2'); </script>
+		<!-- Analytics and Cookie Stuff END -->
+		
+		<script>
+
+  // Enable/Create screens on space load  enableFireScreen(); 
+  // window.onload = (event) => { 
+  //   // enableScreencast(); 
+  //   enableFireScreen(); 
+  // };
+
+	</script>
+<script nonce="c664b4e9-66fa-4497-bfb4-6e9f81329dfa">try{(function(w,d){!function(c,d,e,f){if(c.zaraz)console.error("zaraz is loaded twice");else{c[e]=c[e]||{};c[e].executed=[];c.zaraz={deferred:[],listeners:[]};c.zaraz._v="5714";c.zaraz.q=[];c.zaraz._f=function(g){return async function(){var h=Array.prototype.slice.call(arguments);c.zaraz.q.push({m:g,a:h})}};for(const i of["track","set","debug"])c.zaraz[i]=c.zaraz._f(i);c.zaraz.init=()=>{var j=d.getElementsByTagName(f)[0],k=d.createElement(f),l=d.getElementsByTagName("title")[0];l&&(c[e].t=d.getElementsByTagName("title")[0].text);c[e].x=Math.random();c[e].w=c.screen.width;c[e].h=c.screen.height;c[e].j=c.innerHeight;c[e].e=c.innerWidth;c[e].l=c.location.href;c[e].r=d.referrer;c[e].k=c.screen.colorDepth;c[e].n=d.characterSet;c[e].o=(new Date).getTimezoneOffset();if(c.dataLayer)for(const p of Object.entries(Object.entries(dataLayer).reduce(((q,r)=>({...q[1],...r[1]})),{})))zaraz.set(p[0],p[1],{scope:"page"});c[e].q=[];for(;c.zaraz.q.length;){const s=c.zaraz.q.shift();c[e].q.push(s)}k.defer=!0;for(const t of[localStorage,sessionStorage])Object.keys(t||{}).filter((v=>v.startsWith("_zaraz_"))).forEach((u=>{try{c[e]["z_"+u.slice(7)]=JSON.parse(t.getItem(u))}catch{c[e]["z_"+u.slice(7)]=t.getItem(u)}}));k.referrerPolicy="origin";k.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(c[e])));j.parentNode.insertBefore(k,j)};["complete","interactive"].includes(d.readyState)?zaraz.init():c.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+	<body id="body" class="fixed" style="background-color:#111111;color: #FFFFFF;">
+	   <div style="display: none;"><a-scene id="ascene"
+            sq-friendpositionjoinallowed="enabled: false" sq-portalsenabled="enabled: true" sq-refreshrate="rate:90" sq-spawnpoint="position: 0 0 0;" sq-maxoccupancy="number: 20"
+             sq-assetbundle="
+				android: https://firer.at/android.banter;
+				desktop: https://firer.at/windows.banter;"    >
+
+	<!-- Screen for Movies/Screencast -->
+  <script src="https://firer.at/scripts/firescreencast.js"
+          website="https://firer.at/" mipmaps="1" pixelsperunit="1600" backdrop="0"
+          position="5 1.5 0" rotation="0 -90 0" scale="2 2 1" volumelevel="0.1"></script>
+    
+	<!-- Main Fire Browser, grabbable/moveable -->
+  <script src="https://firer.at/scripts/firescreen.js"
+          website="https://firer.at/" mipmaps="1" pixelsperunit="1600"
+          position="0 1.5 6" rotation="0 180 0" scale="2 2 1" volumelevel="0.2"></script>
+
+  <!--     Test Buttons stuff -->
+  <a-entity id="somebuttons" position="1.7 1.5 6" rotation="0 -180 0" scale="0.2 0.2 0.2" >
+    <!-- Test Button -->
+    <a-plane position="0 3 0" opacity="1.0" width="2" height="0.6"
+    disable-fscreen color="#333333" sq-collider sq-interactable >
+    <a-text value="disable F screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
+    <!-- Test Button -->
+    <a-plane position="0 2 0" opacity="1.0" width="2" height="0.6"
+    enable-fscreen	color="#333333" sq-collider sq-interactable >
+    <a-text value="enable F screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
+    <!-- Test Button -->
+    <a-plane position="0 1 0" opacity="1.0" width="2" height="0.6"
+    disable-screen color="#333333" sq-collider sq-interactable >
+    <a-text value="disable ss screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
+    <!-- Test Button -->
+    <a-plane position="0 0 0" opacity="1.0" width="2" height="0.6"
+    enable-screen	color="#333333" sq-collider sq-interactable >
+    <a-text value="enable ss screen" position="0 0 0.01" align="center" scale="1 1 1" color="#FFFFFF"></a-text></a-plane>
+  </a-entity>
+
+  <a-entity sq-mirror position="-5 1 0" rotation="0 90 0" scale="3 3 1"></a-entity>
+    
+    </a-scene></div>
+<center><br/>
+	<a href="https://firer.at/pages/games.html" class="buttonG">Go Home</a>
+	<p>Or Enter a URL here:<br/>
+  <form id="form" method="get">
+  <input type="url" id="text" value="https://" class="url" size="40" placeholder="https://bantervr.com" onchange="document.getElementById('form').action = this.value;" />
+  <input type="button" id="btn" value="Go" class="url" 
+         onclick="window.open(document.getElementById('text').value);" />
+  </form>
+	</p>
+</center>
+  </body>
+</html>
